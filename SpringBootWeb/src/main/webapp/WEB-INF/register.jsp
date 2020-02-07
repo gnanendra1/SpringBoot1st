@@ -9,13 +9,14 @@
 </head>
 <body>
 <form:form action="register" modelAttribute="student">
-<table align="center">
-<tr><td><label>Student Id      :</label><form:input path="sId"/></td></tr>
-<tr><td><label>Student Name    :</label><form:input path="sName"/></td></tr>
-<tr><td><label>Student Gender  :</label><form:input path="sGender"/></td></tr>
-<tr><td><label>Student PhoneNo :</label><form:input path="sPhoneNo"/></td></tr>
-<tr><td><label>Student Email   :</label><form:input path="sEmail"/></td></tr>
-<tr><td><input type="submit" value="Register"/> </td></tr>
+<h1 align="center">***STUDENT REGISTRATION FORM***</h1>
+<table align="center" bgcolor="skyblue">
+<%-- <tr><th>Student Id</th><td><form:input path="sId"/></td></tr> --%>
+<tr><th>Student Name</th><td><form:input path="sName"/></td></tr>
+<tr><th>Student Gender</th><td><form:input path="sGender"/></td></tr>
+<tr><th>Student PhoneNo</th><td><form:input path="sPhoneNo"/></td></tr>
+<tr><th>Student Email</th><td><form:input path="sEmail"/></td></tr>
+<tr><td colspan="6" align="center"><input type="submit" value="Register"/> </td></tr>
 </table>
 </form:form>
 </body>

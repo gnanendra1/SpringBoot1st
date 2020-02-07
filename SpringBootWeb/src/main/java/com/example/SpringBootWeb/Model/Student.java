@@ -1,6 +1,16 @@
 package com.example.SpringBootWeb.Model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Student")
 public class Student {
+	@Id
+	@GeneratedValue(strategy= GenerationType.AUTO)
 	private int sId;
 	private String sName;
 	private String sGender;
